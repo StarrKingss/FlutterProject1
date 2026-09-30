@@ -135,12 +135,24 @@ class KalkulatorStle extends StatelessWidget {
             ),
           ),
           Container(
-            margin : EdgeInsets.all(20),
+            margin : EdgeInsets.all(25),
             child: Obx(
               () => Text(
                 'Hasil: ${controller.hasilhitung.value}',
                 style: const TextStyle(fontSize: 24),
               ),
+            ),
+          ),
+          Container(
+            margin: EdgeInsets.only(top: 10),
+            
+            child: CustomButton(
+              text: "Reset",
+              onPressed: () {
+                txtangka1.clear();
+                txtangka2.clear();
+                controller.hasilhitung.value = 0.0;
+              },
             ),
           ),
         ],
