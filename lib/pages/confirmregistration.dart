@@ -17,7 +17,6 @@ class Confirmregistration extends StatelessWidget {
       ),
       body: Column(
         children: [
-          
           CustomTextfield(
             hint: "Nama",
             txtController: TextEditingController(text: Get.arguments['nama']),

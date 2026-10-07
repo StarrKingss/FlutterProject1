@@ -1,10 +1,5 @@
 import 'package:flutter/material.dart';
 import 'package:get/get.dart';
-import 'package:project1/kalkulator_page.dart';
-import 'package:project1/kalkulator_stle.dart';
-import 'package:project1/login_clone.dart';
-import 'package:project1/login_page.dart';
-import 'package:project1/pages/login_clone_fix.dart';
 import 'package:project1/routes.dart';
 
 void main() {
@@ -19,7 +14,7 @@ class MyApp extends StatelessWidget {
   Widget build(BuildContext context) {
     return GetMaterialApp(
       title:"Belajar Flutter PPLG 3",
-      initialRoute: Routes.registrationpage,
+      initialRoute: Routes.listproduk,
       getPages: Routes.myPages,
     );
   }

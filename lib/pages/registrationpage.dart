@@ -83,7 +83,6 @@ class Registrationpage extends StatelessWidget {
             ),
             ElevatedButton(
               onPressed: () {
-                String nama = txtNama.text;
                 // Lakukan sesuatu dengan nama, misalnya simpan ke database atau tampilkan di layar
                 Get.toNamed(
                   Routes.confirmregistration,
