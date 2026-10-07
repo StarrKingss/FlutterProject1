@@ -32,6 +32,9 @@ class LoginCloneFix extends StatelessWidget {
                 hint: "Phone number, email or username",
                 txtController: TextEditingController(),
                 cornerRadius: 10,
+                obsecureText: false,
+                prefixIcon: Icons.person,
+                fillColor: const Color.fromARGB(255, 255, 255, 255),
               ),
               const SizedBox(height: 10),
               // Password
@@ -39,6 +42,9 @@ class LoginCloneFix extends StatelessWidget {
                 hint: "Password",
                 txtController: TextEditingController(),
                 cornerRadius: 10,
+                obsecureText: true,
+                prefixIcon: Icons.lock,
+                fillColor: const Color.fromARGB(255, 255, 255, 255),
               ),
               const SizedBox(height: 12),
               // Button Login

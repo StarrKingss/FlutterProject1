@@ -17,14 +17,30 @@ class Confirmregistration extends StatelessWidget {
       ),
       body: Column(
         children: [
+          
           CustomTextfield(
             hint: "Nama",
             txtController: TextEditingController(text: Get.arguments['nama']),
             cornerRadius: 10,
           ),
           CustomTextfield(
+            hint: "Alamat",
+            txtController: TextEditingController(text: Get.arguments['alamat']),
+            cornerRadius: 10,
+          ),
+          CustomTextfield(
             hint: "Jenis Kelamin",
-            txtController: TextEditingController(text: Get.arguments['jenis kelamin']),
+            txtController: TextEditingController(text: Get.arguments['jeniskelamin']),
+            cornerRadius: 10,
+          ),
+          CustomTextfield(
+            hint: "Jenis Kelamin",
+            txtController: TextEditingController(text: Get.arguments['nohp']),
+            cornerRadius: 10,
+          ),
+          CustomTextfield(
+            hint: "Jenis Kelamin",
+            txtController: TextEditingController(text: Get.arguments['email']),
             cornerRadius: 10,
           ),
           ElevatedButton(
@@ -32,7 +48,7 @@ class Confirmregistration extends StatelessWidget {
               Get.back(); // Kembali ke halaman sebelumnya
               // Lakukan sesuatu dengan data yang dikonfirmasi, misalnya simpan ke database
             },
-            child: Text("Confirm"),
+            child: Text("Back"),
           ),
         ],
       ),
