@@ -1,6 +1,7 @@
 import 'package:get/get.dart';
 import 'package:project1/pages/confirmregistration.dart';
 import 'package:project1/pages/list_produk_page.dart';
+import 'package:project1/pages/main_menu_page.dart';
 import 'package:project1/pages/registrationpage.dart';
 import 'package:project1/pages/detail_produk_page.dart';
 
@@ -10,13 +11,13 @@ class Routes {
   static const String confirmregistration = "/confirmregistration";
   static const String listproduk = "/listproduk";
   static const String detailproduk = "/detailproduk";
-
+  static const String mainmenu = "/mainmenu";
   //kita tampung ke dalam array yg akan kita pasang ke main dart
   static final myPages = [
     GetPage(name: registrationpage, page: () => const Registrationpage()),
     GetPage(name: confirmregistration, page: () => const Confirmregistration()),
     GetPage(name: listproduk, page: () => ListProdukPage()),
     GetPage(name: detailproduk, page: () => DetailProdukPage()),
-    GetPage(name: mainmenu, page: Main)
+    GetPage(name: mainmenu, page: () => MainMenuPage()),
   ];
 }
