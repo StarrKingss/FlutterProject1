@@ -17,5 +17,6 @@ class Routes {
     GetPage(name: confirmregistration, page: () => const Confirmregistration()),
     GetPage(name: listproduk, page: () => ListProdukPage()),
     GetPage(name: detailproduk, page: () => DetailProdukPage()),
+    GetPage(name: mainmenu, page: Main)
   ];
 }

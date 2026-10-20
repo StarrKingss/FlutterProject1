@@ -45,7 +45,6 @@ class Confirmregistration extends StatelessWidget {
           ElevatedButton(
             onPressed: () {
               Get.back(); // Kembali ke halaman sebelumnya
-              // Lakukan sesuatu dengan data yang dikonfirmasi, misalnya simpan ke database
             },
             child: Text("Back"),
           ),
