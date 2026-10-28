@@ -4,6 +4,7 @@ import 'package:project1/pages/list_produk_page.dart';
 import 'package:project1/pages/main_menu_page.dart';
 import 'package:project1/pages/registrationpage.dart';
 import 'package:project1/pages/detail_produk_page.dart';
+import 'package:project1/pages/menu_drawer_page.dart';
 
 class Routes {
   //kita list halaman/pages yg ada di dalam applikasi kita
@@ -12,6 +13,7 @@ class Routes {
   static const String listproduk = "/listproduk";
   static const String detailproduk = "/detailproduk";
   static const String mainmenu = "/mainmenu";
+  static const String menudrawer = "/menudrawer";
   //kita tampung ke dalam array yg akan kita pasang ke main dart
   static final myPages = [
     GetPage(name: registrationpage, page: () => const Registrationpage()),
@@ -19,5 +21,6 @@ class Routes {
     GetPage(name: listproduk, page: () => ListProdukPage()),
     GetPage(name: detailproduk, page: () => DetailProdukPage()),
     GetPage(name: mainmenu, page: () => MainMenuPage()),
+    GetPage(name: menudrawer, page:() => MenuDrawerPage()),
   ];
 }
