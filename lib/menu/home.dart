@@ -18,7 +18,7 @@ class HomePage extends StatelessWidget {
           () => RefreshIndicator(
             onRefresh: controller.refreshProduk,
             child: Container(
-              height: 400,
+              height: 300,
               child: ListView.builder(
                 scrollDirection: Axis.horizontal,
                 itemCount: controller.listProduk.length,
@@ -26,7 +26,7 @@ class HomePage extends StatelessWidget {
                   final produk = controller.listProduk[index];
                   Offset tapPosition = Offset.zero;
                   return Container(
-                    width: 250,
+                    width: 200,
                     child: Card(
                       child: Card(
                         color: const Color.fromARGB(255, 255, 217, 151),
@@ -101,8 +101,8 @@ class HomePage extends StatelessWidget {
                               children: [
                                 Image.asset(
                                   controller.listProduk[index].image,
-                                  width: 250,
-                                  height: 250,
+                                  width: 170,
+                                  height: 170,
                                   fit: BoxFit.cover,
                                 ),
 
